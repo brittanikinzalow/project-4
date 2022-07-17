@@ -1,0 +1,38 @@
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+
+.form {
+    flex-basis: 100%;
+  }
+  
+  .input{
+    display: block;
+    width: 94%;
+    margin: 10px auto 0;
+    border: none;
+    padding: 10px;
+    border-bottom: 5px solid #58e1c1;
+  }
+  
+  .hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
+
+  @media (min-width: $break) {
+
+    [class^=col] + [class^=col] {
+      margin-left: 10px;
+    }
+
+    .col-4 {
+      flex-basis: 33.33%;
+    }
+     
+
+  }
